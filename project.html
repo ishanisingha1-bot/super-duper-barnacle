@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
     <body>
-    <h2>JavaScript Error Handling</h2>
-    <p>This example demonstrates how to use <b>catch</b> to display an error</p>
-    <p id="error-alert"></p>
-    <script>
-        try{
-        art("welcome guest!");
-        }
-        catch(err){
-            document.getElementById("error-alert").innerHTML=err.message;
-        }
-    </script>
+        <p>Multiply every element in the array with 67</p>
+        <p id="product_value"></p>
+        <script>
+            var numbers=[12,14,67,143];
+            function myFunction(num){
+                return num*67;
+            }
+            var newarray=numbers.map(myFunction);
+            document.getElementById("product_value").innerHTML=newarray;
+        </script>
     </body>
 </html>

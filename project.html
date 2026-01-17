@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Data Types</title>
+    </head>
     <body>
-        <p>Multiply every element in the array with 67</p>
-        <p id="product_value"></p>
+        <h1>Javascript Data Types</h1>
         <script>
-            var numbers=[12,14,67,143];
-            function myFunction(num){
-                return num*67;
+            var a=8;
+            var b=10;
+            var c=null;
+            var d;
+            {
+                let a=2;
+                const b=8
+                document.write("The value of a is: "+ a);
             }
-            var newarray=numbers.map(myFunction);
-            document.getElementById("product_value").innerHTML=newarray;
+            document.write("a and b are equal: "+ (a==b));
+            document.write("<br>");
+            document.write("The value of d is: "+ d);
+            document.write("<br>");
+            document.write("The value of c is: "+ c);
+            document.write("<br>");
+            document.write("The value of a is: "+ a);
+            document.write("<br>");
+            document.write("The value of d is: "+ b);
+           
+
         </script>
     </body>
 </html>
